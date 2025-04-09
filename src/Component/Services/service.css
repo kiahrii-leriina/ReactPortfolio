@@ -1,0 +1,154 @@
+/* Service Section */
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.servicetitle {
+    position: relative;
+}
+
+.servicetitle h1 {
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.servicetitle img {
+    width: 20vw;
+    position: absolute;
+    top: -30px;
+    right: -50px;
+    z-index: -1;
+}
+
+.servicecontainer img {
+    width: 20px;
+}
+
+.serviceformat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.servicecontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.serviceformat h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.serviceformat h2 {
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(270deg, aqua 50%, #FF1493 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.serviceformat p {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 300px;
+}
+
+.servicereadmore {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.serviceformat:hover {
+    border: 2px solid #FF1493;
+    background-image: linear-gradient(45deg, rgb(4, 71, 71),#650639);
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .service {
+        margin: 50px 20px; /* Reduce margins for smaller screens */
+    }
+
+    .servicetitle h1 {
+        font-size: 2.5rem; /* Smaller title for mobile */
+        text-align: center; /* Center the title */
+        width: 90%; /* Make title more responsive */
+    }
+
+    .servicecontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+        gap: 20px;
+    }
+
+    .serviceformat h3 {
+        font-size: 24px; /* Smaller text for service number */
+    }
+
+    .serviceformat h2 {
+        font-size: 30px; /* Adjust service title font size */
+    }
+
+    .serviceformat p {
+        font-size: 16px; /* Smaller paragraph text */
+        line-height: 24px;
+        max-width: 100%;
+    }
+
+    .servicereadmore {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service {
+        margin: 30px 10px; /* Even smaller margins */
+    }
+
+    .servicetitle h1 {
+        font-size: 2rem; /* Even smaller font size */
+    }
+
+    .servicecontainer {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack the services in one column */
+        gap: 20px;
+    }
+
+    .serviceformat h3 {
+        font-size: 20px; /* Further reduce font size */
+    }
+
+    .serviceformat h2 {
+        font-size: 26px; /* Further reduce service title font size */
+    }
+
+    .serviceformat p {
+        font-size: 14px; /* Reduce paragraph font size */
+    }
+
+    .servicereadmore {
+        flex-direction: column; /* Stack the "Read More" text and icon */
+        gap: 5px;
+    }
+}

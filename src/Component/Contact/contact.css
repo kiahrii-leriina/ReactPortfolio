@@ -1,0 +1,233 @@
+.contact img {
+    width: 15vw;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.contacttitle h1 {
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.contacttitle img {
+    width: 20vw;
+    position: absolute;
+    top: -30px;
+    right: -50px;
+    z-index: -1;
+}
+
+.contactsection {
+    display: flex;
+    gap: 150px;
+}
+
+.contactleft {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactleft h1 {
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg, aqua 60%, #FF1493 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactleft p {
+    max-width: 550px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.contactdetial {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.contactdetial img {
+    width: 20px;
+}
+
+.detial {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactright {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contactright label {
+    color: #D8D8D8;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contactright input {
+    border: none;
+    width: 450px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+.contactright textarea {
+    border: none;
+    width: 450px;
+    height: 150px;
+    padding: 25px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+.submitcontact {
+    height: 2vh;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: black;
+    border-radius: 50px;
+    background: #FF1493;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.submitcontact:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .contact {
+        margin: 50px 20px; /* Reduce margins for mobile */
+    }
+
+    .contacttitle h1 {
+        font-size: 2.5rem; /* Smaller title for mobile */
+        text-align: center; /* Center the title */
+        width: 90%; /* Make title more responsive */
+    }
+
+    .contactsection {
+        flex-direction: column; /* Stack left and right columns vertically */
+        gap: 40px;
+    }
+
+    .contactleft {
+        align-items: center; /* Center contact details */
+    }
+
+    .contactleft h1 {
+        font-size: 2rem; /* Smaller font size */
+        text-align: center; /* Center the heading */
+    }
+
+    .contactleft p {
+        font-size: 1rem; /* Smaller paragraph text */
+        line-height: 1.5;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .contactdetial {
+        gap: 10px; /* Reduced gap for smaller screens */
+        font-size: 18px;
+        align-items: center;
+    }
+
+    .contactright {
+        width: 100%;
+    }
+
+    .contactright label {
+        font-size: 16px; /* Smaller labels */
+    }
+
+    .contactright input,
+    .contactright textarea {
+        width: 100%; /* Make inputs and textareas full-width */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .submitcontact {
+        width: auto;
+        font-size: 1rem; /* Adjust button size */
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        margin: 30px 10px; /* Further reduce margins */
+    }
+
+    .contacttitle h1 {
+        font-size: 2rem; /* Further reduce font size */
+    }
+
+    .contactsection {
+        gap: 30px; /* Reduced gap between sections */
+    }
+
+    .contactleft {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contactleft h1 {
+        font-size: 1.8rem; /* Even smaller title */
+    }
+
+    .contactleft p {
+        font-size: 0.9rem; /* Further reduce text size */
+    }
+
+    .contactdetial {
+        gap: 5px; /* Even smaller gap between details */
+    }
+
+    .contactright label {
+        font-size: 14px; /* Adjust label size */
+    }
+
+    .contactright input,
+    .contactright textarea {
+        width: 100%; /* Full-width inputs and textareas */
+    }
+
+    .submitcontact {
+        padding: 8px 20px; /* Smaller padding for smaller buttons */
+        font-size: 0.9rem; /* Smaller button text */
+    }
+}

@@ -1,0 +1,237 @@
+/* About Section */
+.about img {
+    width: 17vw;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.abouttitle h1 {
+    padding: 0px 30px;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.abouttitle img {
+    position: absolute;
+    top: -25px;
+    right: -50px;
+    z-index: -1;
+}
+
+/* About Section Flex Layout */
+.aboutsection {
+    display: flex;
+    gap: 80px;
+}
+
+/* About Right and Left Columns */
+.aboutright {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.aboutpara {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.aboutskills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: .3s;
+}
+
+.skill p {
+    min-width: 150px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, aqua -5.09%, rgb(4, 114, 4) 106.28%);
+}
+
+.aboutachievements {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.achievement {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+    transition: .5s;
+}
+
+.achievement h1 {
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg, aqua 50.41%, #FF1493 90.25%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.achievement p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.achievement:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .about {
+        margin: 50px 30px; /* Adjust margins for mobile */
+    }
+
+    .abouttitle h1 {
+        font-size: 2.5rem; /* Smaller title for mobile */
+        text-align: center; /* Center the title */
+        width: 90%; /* Make title more responsive */
+    }
+
+    .aboutsection {
+        flex-direction: column; /* Stack the content vertically */
+        gap: 40px;
+    }
+
+    .aboutright {
+        gap: 40px;
+    }
+
+    .aboutpara {
+        font-size: 1rem; /* Smaller text size */
+        width: 90%;
+    }
+
+    .aboutskills {
+        width: 90%;
+    }
+
+    .skill {
+        flex-direction: column; /* Stack skill text and progress bars vertically */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .skill hr {
+        width: 100%; /* Make the skill progress bars take full width */
+    }
+
+    .aboutachievements {
+        flex-direction: column; /* Stack the achievements vertically */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .achievement {
+        align-items: center;
+        text-align: center;
+    }
+
+    .achievement h1 {
+        font-size: 40px; /* Smaller text size for achievements */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* About Section */
+.about img {
+    width: 17vw;
+    border-radius: 50%;
+    margin-top: 50px;
+    display: block; /* Make sure it's a block element */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+/* About Section Flex Layout */
+.aboutsection {
+    display: flex;
+    gap: 80px;
+    justify-content: center; /* Center content horizontally */
+}
+
+/* About Left Column */
+.aboutleft {
+    display: flex;
+    justify-content: center; /* Center the profile image */
+    align-items: center; /* Vertically align the image */
+}
+
+    .about {
+        margin: 30px 10px; /* Reduce margins on very small screens */
+    }
+
+    .abouttitle h1 {
+        font-size: 2rem; /* Further reduce font size */
+    }
+
+    .aboutsection {
+        gap: 30px;
+    }
+
+    .aboutright {
+        gap: 30px;
+    }
+
+    .aboutpara {
+        font-size: 0.9rem; /* Adjust paragraph size for smaller screens */
+        width: 95%; /* Make the text take more width */
+    }
+
+    .aboutskills {
+        width: 95%;
+    }
+
+    .skill {
+        gap: 5px; /* Reduce the gap between skill text and progress bar */
+    }
+
+    .skill hr {
+        width: 100%;
+    }
+
+    .aboutachievements {
+        gap: 20px;
+    }
+
+    .achievement h1 {
+        font-size: 30px; /* Smaller font size for achievements on very small screens */
+    }
+}

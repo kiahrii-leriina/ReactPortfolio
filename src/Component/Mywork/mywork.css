@@ -1,0 +1,170 @@
+.mywork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.myworktitle h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.myworktitle img {
+    width: 17vw;
+    position: absolute;
+    top: -25px;
+    right: -50px;
+    z-index: -1;
+}
+
+.myworkcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates responsive columns */
+    gap: 40px;
+    width: 100%;
+    padding: 20px;
+    justify-items: center;
+}
+
+.myworkitem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.myworkitem h2 {
+    background: linear-gradient(270deg, aqua 40%, #FF1493 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.myworkitem:hover {
+    border: 2px solid #FF1493;
+    background-image: linear-gradient(45deg, rgb(4, 71, 71), #650639);
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.myworkitem p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #ccc;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.myworkcontainer .myworkitem img {
+    border-radius: 10px;
+    border: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.showmore img {
+    width: 40px;
+    height: 20px;
+}
+
+.showmore {
+    display: flex;
+    gap: 10px;
+    border-radius: 50px;
+    border: 2px solid #FF1493;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .6s;
+    cursor: pointer;
+    margin-left: 800px;
+    width: 15vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.showmore a {
+    text-decoration: none;
+    color: white;
+}
+
+.showmore:hover {
+    gap: 30px;
+    transition: 0.6s;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .mywork {
+        margin: 50px 30px; /* Adjust margins for smaller screens */
+    }
+
+    .myworktitle h1 {
+        font-size: 2.5rem; /* Smaller title for mobile */
+        text-align: center; /* Center the title */
+        width: 90%;
+    }
+
+    .myworkcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+        gap: 20px;
+    }
+
+    .myworkitem {
+        max-width: 100%; /* Make items take full width */
+    }
+
+    .myworkitem h2 {
+        font-size: 1.5rem; /* Adjust service title size */
+    }
+
+    .myworkitem p {
+        font-size: 1rem; /* Adjust text size for mobile */
+        line-height: 1.4;
+    }
+
+    .showmore {
+        margin-left: 0; /* Center the 'Show More' button */
+        margin-top: 20px;
+        width: auto;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .myworktitle h1 {
+        font-size: 2rem; /* Further reduce font size */
+    }
+
+    .myworkcontainer {
+        grid-template-columns: 1fr; /* Stack items in one column */
+    }
+
+    .myworkitem {
+        max-width: 100%; /* Full width items */
+        padding: 15px;
+    }
+
+    .showmore {
+        padding: 10px 20px;
+        font-size: 1rem;
+        width: auto;
+        justify-content: center;
+    }
+
+    .showmore img {
+        width: 25px;
+        height: 15px;
+    }
+}

@@ -1,0 +1,105 @@
+.navbar {
+  position: fixed; /* Fixes the navbar to the viewport */
+  top: 0; /* Aligns it to the top */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures it stays above other elements */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 180px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(19, 19, 19, 0.5); /* Transparent black background */
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect for a modern look */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  height: 10vh;
+  padding: 0 20px;
+}
+
+.navbar img {
+  width: 10vw;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+}
+
+.navconnect {
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #FF1493, white 106.28%);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navconnect:hover {
+  transform: scale(1.05);
+}
+
+.anchor {
+  text-decoration: none;
+  color: white;
+}
+
+.anchor:hover {
+  color: #FF1493;
+}
+
+.manuopen {
+  display: none;
+}
+.menuclose {
+  display: none;
+}
+
+
+/* Mobile Specific Styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin: 0px 20px; /* Reduce margin on smaller screens */
+    height: auto; /* Allow navbar to adapt to content height */
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px; /* Add padding */
+  }
+
+  .navbar ul {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column; /* Stack the links vertically */
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar.active ul {
+    display: flex; /* Display the links when active class is added */
+  }
+
+  .manuopen {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .menuclose {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .navconnect {
+    display: none; /* Hide "Connect with me" button for mobile */
+  }
+}

@@ -1,0 +1,143 @@
+.home img {
+    width: 17vw;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.home {
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.home h1 span {
+    background: linear-gradient(267deg, #FF1493, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home p {
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.homeaction {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+.homeconnect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #FF1493;
+    cursor: pointer;
+    transition: 0.2s;
+    min-width: 150px;
+    height: 4vh;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.homeconnect:hover {
+    font-weight: bold;
+    color: white;
+    background: black;
+}
+
+.homeresume {
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: 2px solid #FF1493;
+    cursor: pointer;
+}
+
+.homeresume:hover {
+    font-weight: normal;
+    border: 2px solid white;
+}
+
+.homeresume a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Mobile Specific Styles */
+@media screen and (max-width: 768px) {
+    .home {
+        margin-top: 10vh; /* Adjust the top margin for smaller screens */
+    }
+
+    .home img {
+        width: 40vw; /* Make the profile image smaller on mobile */
+        margin-top: 20px; /* Adjust top margin for better spacing */
+    }
+
+    .home h1 {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+        width: 90%; /* Make the heading width more responsive */
+    }
+
+    .home p {
+        width: 80%; /* Adjust paragraph width for mobile */
+        font-size: 1rem; /* Make font size smaller for mobile */
+    }
+
+    .homeaction {
+        flex-direction: column; /* Stack action buttons vertically */
+        gap: 20px;
+    }
+
+    .homeconnect, .homeresume {
+        width: 100%; /* Make the buttons full width on mobile */
+        min-width: 0; /* Remove minimum width */
+        padding: 12px 20px; /* Adjust padding for better touch targets */
+    }
+}
+
+/* Very Small Screens (e.g., small phones) */
+@media screen and (max-width: 480px) {
+    .home {
+        margin-top: 5vh;
+    }
+
+    .home img {
+        width: 50vw; /* Smaller profile image on very small screens */
+    }
+
+    .home h1 {
+        font-size: 1.2rem; /* Further reduce font size */
+        width: 90%;
+    }
+
+    .home p {
+        width: 90%;
+        font-size: 0.9rem; /* Adjust font size for better readability */
+    }
+
+    .homeaction {
+        gap: 15px; /* Reduce gap between buttons */
+    }
+
+    .homeconnect, .homeresume {
+        width: 100%;
+        font-size: 0.9rem; /* Smaller font size for buttons */
+    }
+}

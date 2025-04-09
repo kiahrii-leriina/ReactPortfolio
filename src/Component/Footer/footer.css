@@ -1,0 +1,161 @@
+.footeremailinput img {
+    width: 20px;
+}
+
+.footertopleft img {
+    width: 7vw;
+    border: none;
+}
+
+.footer {
+    margin: 50px 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footertop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footertopleft p {
+    font-size: 15px;
+    max-width: 400px;
+}
+
+.footertopright {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footeremailinput {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background: #32323B;
+    padding-right: 80px;
+}
+
+.footeremailinput input {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #a0a0a0a0;
+    font-family: Outfit;
+    font-size: 18px;
+}
+
+.footeremailinput:hover {
+    border: 2px solid #FF1493;
+}
+
+.subscribe {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #FF1493;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.subscribe:hover {
+    background: #32323B;
+    color: #FF1493;
+    transform: scale(1.1);
+    transition: .1s;
+}
+
+.footerbuttom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.footerbottomright {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .footer {
+        margin: 50px 20px; /* Reduce margins for mobile */
+    }
+
+    .footertop {
+        flex-direction: column; /* Stack the content vertically on smaller screens */
+        align-items: center;
+    }
+
+    .footertopleft p {
+        text-align: center; /* Center text for mobile */
+        font-size: 14px; /* Smaller text size */
+        max-width: 100%;
+    }
+
+    .footertopright {
+        flex-direction: column; /* Stack the email input and subscribe button */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footeremailinput {
+        width: 100%; /* Make email input field full-width */
+        padding-right: 40px; /* Reduce padding */
+    }
+
+    .footeremailinput input {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .subscribe {
+        font-size: 18px; /* Adjust button font size */
+        padding: 8px 20px; /* Reduce padding */
+    }
+
+    .footerbuttom {
+        flex-direction: column; /* Stack footer bottom content */
+        align-items: center;
+        gap: 10px;
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .footerbottomright {
+        gap: 15px; /* Adjust gap between items */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        margin: 30px 10px; /* Further reduce margins on very small screens */
+    }
+
+    .footertopleft p {
+        font-size: 12px; /* Further reduce text size */
+    }
+
+    .footeremailinput {
+        width: 100%; /* Full width input field */
+        padding-right: 20px;
+    }
+
+    .footeremailinput input {
+        font-size: 14px; /* Smaller input text */
+    }
+
+    .subscribe {
+        font-size: 16px; /* Smaller button text */
+        padding: 8px 20px; /* Adjust padding */
+    }
+
+    .footerbuttom {
+        font-size: 14px; /* Further reduce font size */
+        align-items: center;
+        gap: 8px;
+    }
+}
