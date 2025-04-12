@@ -2,7 +2,7 @@ import React from 'react';
 import './home.css';
 import profile from '../../assets/profile.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import resume from '../../assets/resume.pdf'; 
+import resume from '../../assets/leriina_resume.pdf'; 
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
             </AnchorLink>
           </div>
           <div className="homeresume">
-            <a href={resume} download="Kaihrii_Leriina_Resume.pdf">Download My Resume</a>
+            <a href={resume} download="leriina_resume.pdf">Download My Resume</a>
           </div>
         </div>
       </div>
